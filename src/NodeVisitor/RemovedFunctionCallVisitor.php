@@ -136,6 +136,24 @@ class RemovedFunctionCallVisitor extends AbstractVisitor
         'mssql_result',
         'mssql_rows_affected',
         'mssql_select_db',
+        
+        // Three session functions were removed in 5.4
+        'session_is_registered',
+        'session_register',
+        'session_unregister',
+        
+        // Misc 5.4 removed functions
+        'define_syslog_variables',
+        'import_request_variables',
+        
+        // MySQLi aliases removed by 5.4
+        'mysqli_bind_param',
+        'mysqli_bind_result',
+        'mysqli_client_encoding',
+        'mysqli_fetch',
+        'mysqli_param_count',
+        'mysqli_get_metadata',
+        'mysqli_send_long_data'
     );
 
     /**
